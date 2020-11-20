@@ -1,0 +1,39 @@
+
+Menu
+
+Java Program to Find the Biggest of 3 Numbers
+« PrevNext »
+This is a Java Program to Find the Biggest of 3 Numbers.
+Enter any three integer numbers as an input. Now we check the first number against the second and third number. If it false then we check for second number against third. If it is also false then accordingly third number will be declared the largest number of the given three numbers.
+
+Here is the source code of the Java Program to Find the Biggest of 3 Numbers. The Java program is successfully compiled and run on a Windows system. The program output is also shown below.
+
+advertisement
+import java.util.Scanner;
+public class Biggest_Number 
+{
+    public static void main(String[] args) 
+    {
+        int x, y, z;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter the first number:");
+        x = s.nextInt();
+        System.out.print("Enter the second number:");
+        y = s.nextInt();
+        System.out.print("Enter the third number:");
+        z = s.nextInt();
+        if(x > y && x > z)
+        {
+            System.out.println("Largest number is:"+x);
+        }
+        else if(y > z)
+        {
+            System.out.println("Largest number is:"+y);
+        }
+        else
+        {
+            System.out.println("Largest number is:"+z);
+        }
+ 
+    }
+}
